@@ -1,2 +1,0 @@
-"use strict";
-importScripts("sw-toolbox.js"); toolbox.precache(["index.html","krivomazova.css","j1.js", "manifest.json" ]); toolbox.router.get("/images/*", toolbox.cacheFirst); toolbox.router.get("/*", toolbox.networkFirst, { networkTimeoutSeconds: 5});
